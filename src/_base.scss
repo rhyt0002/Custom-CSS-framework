@@ -1,0 +1,128 @@
+@use 'sass:color';
+@use 'typography';
+@use 'variables';
+@use 'colors';
+
+// links
+a {
+    text-decoration: underline;
+    color: colors.$primary-color;
+
+    &:hover {
+        color: colors.$success-color;
+        text-decoration: none;
+        color: color.scale(colors.$success-color, $lightness: -20%);
+    }
+}
+
+// buttons
+@mixin btn-primary {
+    background-color: colors.$primary-color;
+    color: colors.$tertiary-color;
+    border: none;
+    border-radius: 20px;
+    display: inline-block;
+    transition: .7s;
+    cursor: pointer;
+    padding: 10px;
+
+    &:hover {
+        background-color: color.scale(colors.$primary-color, $lightness: -20%);
+    }
+}
+
+.btn-primary {
+    @include btn-primary;
+}
+
+@mixin btn-secondary {
+    background-color: colors.$secondary-color;
+    color: colors.$tertiary-color;
+    border: none;
+    border-radius: 20px;
+    display: inline-block;
+    transition: .7s;
+    cursor: pointer;
+    padding: 10px;
+
+    &:hover {
+        background-color: color.scale(colors.$secondary-color, $lightness: -20%);
+    }
+}
+
+.btn-secondary {    
+    @include btn-secondary;
+}
+@mixin btn-tertiary {
+    background-color: colors.$success-color;
+    color: colors.$tertiary-color;
+    border: none;
+    border-radius: 20px;
+    display: inline-block;
+    transition: .7s;
+    cursor: pointer;
+    padding: 10px;
+
+    &:hover {    
+        background-color: color.scale(colors.$success-color, $lightness: -20%);
+    }
+}
+
+.btn-tertiary {
+    @include btn-tertiary;
+}
+@mixin btn-info {
+    background-color: colors.$info-color;
+    color: colors.$tertiary-color;
+    border: none;
+    border-radius: 20px;
+    display: inline-block;
+    transition: .7s;
+    cursor: pointer;
+    padding: 10px;
+
+    &:hover {
+        background-color: color.scale(colors.$info-color, $lightness: -20%);
+    }
+}
+
+.btn-info {
+    @include btn-info;
+}   
+
+@mixin btn-danger {
+    background-color: colors.$danger-color;
+    color: colors.$tertiary-color;
+    border: none;
+    border-radius: 20px;
+    display: inline-block;
+    transition: .7s;
+    cursor: pointer;
+    padding: 10px;
+
+    &:hover {
+        background-color: color.scale(colors.$danger-color, $lightness: -20%);
+    }
+}
+
+.btn-danger {
+    @include btn-danger;
+}
+@mixin btn-alert {
+    background-color: colors.$warning-color;
+    color: colors.$secondary-color;
+    border: none;
+    border-radius: 20px;
+    display: inline-block;
+    transition: .7s;
+    cursor: pointer;
+    padding: 10px;
+
+    &:hover {
+        background-color: color.scale(colors.$warning-color, $lightness: -20%);
+    }
+}
+
+.btn-alert {
+    @include btn-alert;
+}

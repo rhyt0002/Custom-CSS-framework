@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+}
+// font gap
+$font-gap: 0.6rem;
+
+// font sizes
+$font-xs : 0.75rem;
+$font-sm : 0.875rem;
+$font-md : 1rem;
+$font-lg : 1.125rem;
+$font-xl : 1.25rem;
+$font-xxl : 1.5rem;
+$font-xxxl : 2rem;
+
+// font weights
+$font-wt-thin : 100;
+$font-wt-medium : 300;
+$font-wt-regular : 400;
+$font-wt-bold : 500;
+$font-wt-bolder : 700;
+$font-wt-xtrabold : 900;
+
+h1 {
+    font-size: $font-xxxl;
+    font-weight: $font-wt-xtrabold;
+    margin-bottom: $font-gap;
+}
+h2 {
+    font-size: $font-xxl;
+    font-weight: $font-wt-bolder;
+    margin-bottom: $font-gap;
+}
+h3 {
+    font-size: $font-xl;
+    font-weight: $font-wt-bold;
+    margin-bottom: $font-gap;
+}
+h4 {
+    font-size: $font-lg;
+    font-weight: $font-wt-bold;
+    margin-bottom: $font-gap;
+}
+h5 {
+    font-size: $font-md;
+    font-weight: $font-wt-bold;
+    margin-bottom: $font-gap;
+}
+h6 {
+    font-size: $font-sm;
+    font-weight: $font-wt-bold;
+    margin-bottom: $font-gap;
+}
+Strong {
+    font-weight: $font-wt-xtrabold;
+}
+em {
+    font-style: italic;
+    font-weight: $font-wt-medium;
+}
+p {
+    font-size: $font-md;
+    font-weight: $font-wt-regular;
+    margin-bottom: $font-gap;
+}
