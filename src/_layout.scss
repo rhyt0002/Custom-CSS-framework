@@ -1,0 +1,120 @@
+@use 'colors';
+
+.flex {
+    display: flex;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .flex-row {
+    flex-direction: row;
+  }
+  
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  
+  .flex-nowrap {
+    flex-wrap: nowrap;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .justify-space-between {
+    justify-content: space-between;
+  }
+  
+  .justify-space-around {
+    justify-content: space-around;
+  }
+  
+  .justify-start {
+    justify-content: flex-start;
+  }
+  
+  .justify-end {
+    justify-content: flex-end;
+  }
+  
+  .align-center {
+    align-items: center;
+  }
+  
+  .align-start {
+    align-items: flex-start;
+  }
+  
+  .align-end {
+    align-items: flex-end;
+  }
+  
+  .flex-grow {
+    flex-grow: 1;
+  }
+  
+  // Grid Utilities
+  .grid {
+    display: grid;
+  }
+  
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .grid-gap {
+    gap: 1rem;
+  }
+  
+  .grid-gap-lg {
+    gap: 2rem;
+  }
+  
+  .grid-align-center {
+    place-items: center;
+  }
+  
+  .grid-align-start {
+    place-items: start;
+  }
+  
+  .grid-align-end {
+    place-items: end;
+  }
+  
+  // Container and Spacing
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .container-fluid {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  // Layout Wrappers
+  .wrapper {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: $background-color-light;
+    border-radius: 5px;
+  }
+  
+  .wrapper-lg {
+    padding: 2rem;
+    margin: 2rem;
+  }
