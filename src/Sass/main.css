@@ -20,7 +20,6 @@ html {
   text-size-adjust: none;
 }
 
-
 a, button {
   cursor: revert;
 }
@@ -52,12 +51,17 @@ textarea {
 
 meter {
   -webkit-appearance: revert;
-  appearance: revert;
+  -moz-appearance: revert;
+       appearance: revert;
 }
 
 :where(pre) {
   all: revert;
   box-sizing: border-box;
+}
+
+::-moz-placeholder {
+  color: unset;
 }
 
 ::placeholder {
@@ -238,124 +242,3 @@ a:hover {
 .btn-alert:hover {
   background-color: #cccc00;
 }
-
-/* tables and lists */
-
-
-.table-container {
-  width: 100%;
-  max-width: 800px;
-  margin-bottom: 40px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-  font-size: 16px;
-}
-table thead {
-  background-color: #3498db;
-  color: white;
-}
-table thead th {
-  padding: 10px;
-  text-align: left;
-}
-table tbody tr:nth-child(odd) {
-  background-color: #ecf0f1;
-}
-table tbody tr:hover {
-  background-color: white;
-}
-table tbody tr td {
-  padding: 10px;
-  border: 1px solid #bdc3c7;
-}
-
-.list-container ol, .list-container ul {
-  padding-left: 20px;
-  margin-bottom: 20px;
-}
-.list-container ol li, .list-container ul li {
-  padding: 5px 0;
-}
-.list-container ol {
-  list-style-type: decimal;
-}
-.list-container ol li {
-  color: #3498db;
-}
-.list-container ul {
-  list-style-type: square;
-}
-.list-container ul li {
-  color: #217dbb;
-}
-
-
-/* forms */
-
-
-.login-container {
-  background-color: white;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px;
-}
-
-
-
-.input-group {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-  color: #2c3e50;
-  font-weight: bold;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #bdc3c7;
-  border-radius: 5px;
-  background-color: #ecf0f1;
-}
-input:focus {
-  outline: none;
-  border-color: #3498db;
-}
-
-.btn {
-  width: 100%;
-  padding: 10px;
-  background-color: #3498db;
-  color: #fff;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-bottom: 10px;
-}
-.btn:hover {
-  background-color: #217dbb;
-}
-
-.signup-link {
-  text-align: center;
-  margin-top: 10px;
-}
-.signup-link a {
-  color: #3498db;
-  text-decoration: none;
-}
-.signup-link a:hover {
-  text-decoration: underline;
-}
-/*# sourceMappingURL=main.css.map */

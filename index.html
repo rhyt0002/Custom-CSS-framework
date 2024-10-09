@@ -1,38 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coustom CSS Framework</title>
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="C:\Users\Arman Bhatia\Desktop\Custom-CSS-framework\src\Sass\form.css">
 </head>
+
 <body>
 
     <h1>Custom CSS Framework</h1>
-    
+
     <h2>Heading</h2>
-    
+
     <h3>Subheading</h3>
-    
+
     <h4>Subsubheading</h4>
-    
+
     <h5>Subsubsubheading</h5>
-    
+
     <h6>Subsubsubsubheading</h6>
-    
-    <p>Paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, amet a? Eum unde ratione maiores numquam fuga architecto voluptatum hic, obcaecati debitis odit nesciunt rem iste reiciendis cumque suscipit quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium assumenda obcaecati aspernatur enim facilis voluptate vero similique aut sequi. Vero, ipsam eos corrupti adipisci atque maxime optio architecto aliquam eaque!</p>
+
+    <p>Paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, amet a? Eum unde ratione maiores
+        numquam fuga architecto voluptatum hic, obcaecati debitis odit nesciunt rem iste reiciendis cumque suscipit
+        quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium assumenda obcaecati aspernatur enim
+        facilis voluptate vero similique aut sequi. Vero, ipsam eos corrupti adipisci atque maxime optio architecto
+        aliquam eaque!</p>
 
     <a href="#">Link to page</a>
-    
+
     <button class="btn-primary">Primary Button</button>
-    
+
     <button class="btn-secondary">Secondary Button</button>
-    
+
     <button class="btn-tertiary">Green Button</button>
     <button class="btn-info">Info Button</button>
     <button class="btn-danger">Danger Button</button>
     <button class="btn-alert">Alert Button</button>
-    
+
+    <!-- form --> <br> <br>
+    <div class="login-container">
+        <form action="#" method="post" class="login-form">
+            <h2>Login</h2>
+
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <p class="signup-link">Don't have an account? <a href="#">Sign up here</a></p>
+        </form>
+    </div>
+
+    <!-- Table Section -->
+    <div class="table-container">
+        <h2>Team Members</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>Contact Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rhythm</td>
+                    <td>Rhythm</td>
+                    <td>22</td>
+                    <td>343-656-2***</td>
+
+                </tr>
+                <tr>
+                    <td>Deepanshu</td>
+                    <td>Bhatia</td>
+                    <td>20</td>
+                    <td>343-777-5***</td>
+
+                </tr>
+                <tr>
+                    <td>Jaskirat</td>
+                    <td>Kaur</td>
+                    <td>21</td>
+                    <td>256-659-9***</td>
+
+                </tr>
+                <tr>
+
+                </tr>
+                <td>Yuvraj</td>
+                <td>Singh</td>
+                <td>21</td>
+                <td>456-515-8***</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Lists Section -->
+    <div class="list-container">
+        <h2>Ordered List</h2>
+        <ol>
+            <li>Plan the project</li>
+            <li>Design the layout</li>
+            <li>Code the application</li>
+            <li>Test and Debug</li>
+            <li>Deploy the project</li>
+        </ol>
+
+        <h2>Unordered List</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </div>
+
 </body>
+
 </html>
